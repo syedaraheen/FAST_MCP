@@ -1,0 +1,626 @@
+[
+  {
+    "timestamp": "2025-10-04T11:38:46.662882",
+    "endpoint": "/tasks",
+    "request": {
+      "query": "pending"
+    },
+    "response": {
+      "success": false,
+      "data": [],
+      "count": 0,
+      "query": "pending"
+    }
+  },
+  {
+    "timestamp": "2025-10-04T11:40:30.371930",
+    "endpoint": "/tasks",
+    "request": {
+      "query": "pending"
+    },
+    "response": {
+      "success": true,
+      "data": [
+        {
+          "Task": "Buy groceries",
+          "Status": "Pending",
+          "Due Date": "2025-10-05"
+        },
+        {
+          "Task": "Call client",
+          "Status": "Pending",
+          "Due Date": "2025-10-06"
+        },
+        {
+          "Task": "Schedule meeting",
+          "Status": "Pending",
+          "Due Date": "2025-10-07"
+        },
+        {
+          "Task": "Plan weekend trip",
+          "Status": "Pending",
+          "Due Date": "2025-10-10"
+        },
+        {
+          "Task": "Clean workspace",
+          "Status": "Pending",
+          "Due Date": "2025-10-05"
+        }
+      ],
+      "count": 5,
+      "query": "pending"
+    }
+  },
+  {
+    "timestamp": "2025-10-04T11:40:34.969423",
+    "endpoint": "/tasks",
+    "request": {
+      "query": "done"
+    },
+    "response": {
+      "success": true,
+      "data": [
+        {
+          "Task": "Finish project report",
+          "Status": "Done",
+          "Due Date": "2025-10-04"
+        },
+        {
+          "Task": "Submit assignment",
+          "Status": "Done",
+          "Due Date": "2025-10-03"
+        }
+      ],
+      "count": 2,
+      "query": "done"
+    }
+  },
+  {
+    "timestamp": "2025-10-04T11:40:38.499409",
+    "endpoint": "/tasks",
+    "request": {
+      "query": "all"
+    },
+    "response": {
+      "success": true,
+      "data": [
+        {
+          "Task": "Buy groceries",
+          "Status": "Pending",
+          "Due Date": "2025-10-05"
+        },
+        {
+          "Task": "Finish project report",
+          "Status": "Done",
+          "Due Date": "2025-10-04"
+        },
+        {
+          "Task": "Call client",
+          "Status": "Pending",
+          "Due Date": "2025-10-06"
+        },
+        {
+          "Task": "Schedule meeting",
+          "Status": "Pending",
+          "Due Date": "2025-10-07"
+        },
+        {
+          "Task": "Submit assignment",
+          "Status": "Done",
+          "Due Date": "2025-10-03"
+        },
+        {
+          "Task": "Plan weekend trip",
+          "Status": "Pending",
+          "Due Date": "2025-10-10"
+        },
+        {
+          "Task": "Clean workspace",
+          "Status": "Pending",
+          "Due Date": "2025-10-05"
+        }
+      ],
+      "count": 7,
+      "query": "all"
+    }
+  },
+  {
+    "timestamp": "2025-10-04T11:41:05.978805",
+    "endpoint": "/gemini",
+    "request": {
+      "prompt": "Hello, how are you?",
+      "model": "gemini-pro"
+    },
+    "response": {
+      "success": false,
+      "response": "",
+      "error": "Usage: gemini [options] [command]\n\nGemini CLI - Launch an interactive CLI, use -p/--prompt for non-interactive mode\n\nCommands:\n  gemini [promptWords...]      Launch Gemini CLI  [default]\n  gemini mcp                   Manage MCP servers\n  gemini extensions <command>  Manage Gemini CLI extensions.\n\nOptions:\n      --telemetry                 Enable telemetry? This flag specifically controls if telemetry is sent. Other --telemetry-* flags set specific values but do not enable telemetry on their own.  [deprecated: Use the \"telemetry.enabled\" setting in settings.json instead. This flag will be removed in a future version.] [boolean]\n      --telemetry-target          Set the telemetry target (local or gcp). Overrides settings files.  [deprecated: Use the \"telemetry.target\" setting in settings.json instead. This flag will be removed in a future version.] [string] [choices: \"local\", \"gcp\"]\n      --telemetry-otlp-endpoint   Set the OTLP endpoint for telemetry. Overrides environment variables and settings files.  [deprecated: Use the \"telemetry.otlpEndpoint\" setting in settings.json instead. This flag will be removed in a future version.] [string]\n      --telemetry-otlp-protocol   Set the OTLP protocol for telemetry (grpc or http). Overrides settings files.  [deprecated: Use the \"telemetry.otlpProtocol\" setting in settings.json instead. This flag will be removed in a future version.] [string] [choices: \"grpc\", \"http\"]\n      --telemetry-log-prompts     Enable or disable logging of user prompts for telemetry. Overrides settings files.  [deprecated: Use the \"telemetry.logPrompts\" setting in settings.json instead. This flag will be removed in a future version.] [boolean]\n      --telemetry-outfile         Redirect all telemetry output to the specified file.  [deprecated: Use the \"telemetry.outfile\" setting in settings.json instead. This flag will be removed in a future version.] [string]\n  -d, --debug                     Run in debug mode?  [boolean] [default: false]\n      --proxy                     Proxy for gemini client, like schema://user:password@host:port  [deprecated: Use the \"proxy\" setting in settings.json instead. This flag will be removed in a future version.] [string]\n  -m, --model                     Model  [string]\n  -p, --prompt                    Prompt. Appended to input on stdin (if any).  [deprecated: Use the positional prompt instead. This flag will be removed in a future version.] [string]\n  -i, --prompt-interactive        Execute the provided prompt and continue in interactive mode  [string]\n  -s, --sandbox                   Run in sandbox?  [boolean]\n      --sandbox-image             Sandbox image URI.  [deprecated: Use the \"tools.sandbox\" setting in settings.json instead. This flag will be removed in a future version.] [string]\n  -a, --all-files                 Include ALL files in context?  [deprecated: Use @ includes in the application instead. This flag will be removed in a future version.] [boolean] [default: false]\n      --show-memory-usage         Show memory usage in status bar  [deprecated: Use the \"ui.showMemoryUsage\" setting in settings.json instead. This flag will be removed in a future version.] [boolean] [default: false]\n  -y, --yolo                      Automatically accept all actions (aka YOLO mode, see https://www.youtube.com/watch?v=xvFZjo5PgG0 for more details)?  [boolean] [default: false]\n      --approval-mode             Set the approval mode: default (prompt for approval), auto_edit (auto-approve edit tools), yolo (auto-approve all tools)  [string] [choices: \"default\", \"auto_edit\", \"yolo\"]\n  -c, --checkpointing             Enables checkpointing of file edits  [deprecated: Use the \"general.checkpointing.enabled\" setting in settings.json instead. This flag will be removed in a future version.] [boolean] [default: false]\n      --experimental-acp          Starts the agent in ACP mode  [boolean]\n      --allowed-mcp-server-names  Allowed MCP server names  [array]\n      --allowed-tools             Tools that are allowed to run without confirmation  [array]\n  -e, --extensions                A list of extensions to use. If not provided, all extensions are used.  [array]\n  -l, --list-extensions           List all available extensions and exit.  [boolean]\n      --include-directories       Additional directories to include in the workspace (comma-separated or multiple --include-directories)  [array]\n      --screen-reader             Enable screen reader mode for accessibility.  [boolean]\n  -o, --output-format             The format of the CLI output.  [string] [choices: \"text\", \"json\"]\n  -v, --version                   Show version number  [boolean]\n  -h, --help                      Show help  [boolean]\n\nCannot use both a positional prompt and the --prompt (-p) flag together"
+    }
+  },
+  {
+    "timestamp": "2025-10-04T11:46:17.706645",
+    "endpoint": "/tasks",
+    "request": {
+      "query": "pending"
+    },
+    "response": {
+      "success": true,
+      "data": [
+        {
+          "Task": "Buy groceries",
+          "Status": "Pending",
+          "Due Date": "2025-10-05"
+        },
+        {
+          "Task": "Call client",
+          "Status": "Pending",
+          "Due Date": "2025-10-06"
+        },
+        {
+          "Task": "Schedule meeting",
+          "Status": "Pending",
+          "Due Date": "2025-10-07"
+        },
+        {
+          "Task": "Plan weekend trip",
+          "Status": "Pending",
+          "Due Date": "2025-10-10"
+        },
+        {
+          "Task": "Clean workspace",
+          "Status": "Pending",
+          "Due Date": "2025-10-05"
+        }
+      ],
+      "count": 5,
+      "query": "pending"
+    }
+  },
+  {
+    "timestamp": "2025-10-04T11:46:17.820572",
+    "endpoint": "/tasks",
+    "request": {
+      "query": "done"
+    },
+    "response": {
+      "success": true,
+      "data": [
+        {
+          "Task": "Finish project report",
+          "Status": "Done",
+          "Due Date": "2025-10-04"
+        },
+        {
+          "Task": "Submit assignment",
+          "Status": "Done",
+          "Due Date": "2025-10-03"
+        }
+      ],
+      "count": 2,
+      "query": "done"
+    }
+  },
+  {
+    "timestamp": "2025-10-04T11:46:17.922806",
+    "endpoint": "/tasks",
+    "request": {
+      "query": "all"
+    },
+    "response": {
+      "success": true,
+      "data": [
+        {
+          "Task": "Buy groceries",
+          "Status": "Pending",
+          "Due Date": "2025-10-05"
+        },
+        {
+          "Task": "Finish project report",
+          "Status": "Done",
+          "Due Date": "2025-10-04"
+        },
+        {
+          "Task": "Call client",
+          "Status": "Pending",
+          "Due Date": "2025-10-06"
+        },
+        {
+          "Task": "Schedule meeting",
+          "Status": "Pending",
+          "Due Date": "2025-10-07"
+        },
+        {
+          "Task": "Submit assignment",
+          "Status": "Done",
+          "Due Date": "2025-10-03"
+        },
+        {
+          "Task": "Plan weekend trip",
+          "Status": "Pending",
+          "Due Date": "2025-10-10"
+        },
+        {
+          "Task": "Clean workspace",
+          "Status": "Pending",
+          "Due Date": "2025-10-05"
+        }
+      ],
+      "count": 7,
+      "query": "all"
+    }
+  },
+  {
+    "timestamp": "2025-10-04T11:46:26.991559",
+    "endpoint": "/gemini",
+    "request": {
+      "prompt": "Hello, how are you?",
+      "model": "gemini-pro"
+    },
+    "response": {
+      "success": false,
+      "response": "",
+      "error": "Usage: gemini [options] [command]\n\nGemini CLI - Launch an interactive CLI, use -p/--prompt for non-interactive mode\n\nCommands:\n  gemini [promptWords...]      Launch Gemini CLI  [default]\n  gemini mcp                   Manage MCP servers\n  gemini extensions <command>  Manage Gemini CLI extensions.\n\nOptions:\n      --telemetry                 Enable telemetry? This flag specifically controls if telemetry is sent. Other --telemetry-* flags set specific values but do not enable telemetry on their own.  [deprecated: Use the \"telemetry.enabled\" setting in settings.json instead. This flag will be removed in a future version.] [boolean]\n      --telemetry-target          Set the telemetry target (local or gcp). Overrides settings files.  [deprecated: Use the \"telemetry.target\" setting in settings.json instead. This flag will be removed in a future version.] [string] [choices: \"local\", \"gcp\"]\n      --telemetry-otlp-endpoint   Set the OTLP endpoint for telemetry. Overrides environment variables and settings files.  [deprecated: Use the \"telemetry.otlpEndpoint\" setting in settings.json instead. This flag will be removed in a future version.] [string]\n      --telemetry-otlp-protocol   Set the OTLP protocol for telemetry (grpc or http). Overrides settings files.  [deprecated: Use the \"telemetry.otlpProtocol\" setting in settings.json instead. This flag will be removed in a future version.] [string] [choices: \"grpc\", \"http\"]\n      --telemetry-log-prompts     Enable or disable logging of user prompts for telemetry. Overrides settings files.  [deprecated: Use the \"telemetry.logPrompts\" setting in settings.json instead. This flag will be removed in a future version.] [boolean]\n      --telemetry-outfile         Redirect all telemetry output to the specified file.  [deprecated: Use the \"telemetry.outfile\" setting in settings.json instead. This flag will be removed in a future version.] [string]\n  -d, --debug                     Run in debug mode?  [boolean] [default: false]\n      --proxy                     Proxy for gemini client, like schema://user:password@host:port  [deprecated: Use the \"proxy\" setting in settings.json instead. This flag will be removed in a future version.] [string]\n  -m, --model                     Model  [string]\n  -p, --prompt                    Prompt. Appended to input on stdin (if any).  [deprecated: Use the positional prompt instead. This flag will be removed in a future version.] [string]\n  -i, --prompt-interactive        Execute the provided prompt and continue in interactive mode  [string]\n  -s, --sandbox                   Run in sandbox?  [boolean]\n      --sandbox-image             Sandbox image URI.  [deprecated: Use the \"tools.sandbox\" setting in settings.json instead. This flag will be removed in a future version.] [string]\n  -a, --all-files                 Include ALL files in context?  [deprecated: Use @ includes in the application instead. This flag will be removed in a future version.] [boolean] [default: false]\n      --show-memory-usage         Show memory usage in status bar  [deprecated: Use the \"ui.showMemoryUsage\" setting in settings.json instead. This flag will be removed in a future version.] [boolean] [default: false]\n  -y, --yolo                      Automatically accept all actions (aka YOLO mode, see https://www.youtube.com/watch?v=xvFZjo5PgG0 for more details)?  [boolean] [default: false]\n      --approval-mode             Set the approval mode: default (prompt for approval), auto_edit (auto-approve edit tools), yolo (auto-approve all tools)  [string] [choices: \"default\", \"auto_edit\", \"yolo\"]\n  -c, --checkpointing             Enables checkpointing of file edits  [deprecated: Use the \"general.checkpointing.enabled\" setting in settings.json instead. This flag will be removed in a future version.] [boolean] [default: false]\n      --experimental-acp          Starts the agent in ACP mode  [boolean]\n      --allowed-mcp-server-names  Allowed MCP server names  [array]\n      --allowed-tools             Tools that are allowed to run without confirmation  [array]\n  -e, --extensions                A list of extensions to use. If not provided, all extensions are used.  [array]\n  -l, --list-extensions           List all available extensions and exit.  [boolean]\n      --include-directories       Additional directories to include in the workspace (comma-separated or multiple --include-directories)  [array]\n      --screen-reader             Enable screen reader mode for accessibility.  [boolean]\n  -o, --output-format             The format of the CLI output.  [string] [choices: \"text\", \"json\"]\n  -v, --version                   Show version number  [boolean]\n  -h, --help                      Show help  [boolean]\n\nCannot use both a positional prompt and the --prompt (-p) flag together"
+    }
+  },
+  {
+    "timestamp": "2025-10-04T11:48:18.520266",
+    "endpoint": "/tasks",
+    "request": {
+      "query": "pending"
+    },
+    "response": {
+      "success": true,
+      "data": [
+        {
+          "Task": "Buy groceries",
+          "Status": "Pending",
+          "Due Date": "2025-10-05"
+        },
+        {
+          "Task": "Call client",
+          "Status": "Pending",
+          "Due Date": "2025-10-06"
+        },
+        {
+          "Task": "Schedule meeting",
+          "Status": "Pending",
+          "Due Date": "2025-10-07"
+        },
+        {
+          "Task": "Plan weekend trip",
+          "Status": "Pending",
+          "Due Date": "2025-10-10"
+        },
+        {
+          "Task": "Clean workspace",
+          "Status": "Pending",
+          "Due Date": "2025-10-05"
+        }
+      ],
+      "count": 5,
+      "query": "pending"
+    }
+  },
+  {
+    "timestamp": "2025-10-04T11:48:21.769749",
+    "endpoint": "/tasks",
+    "request": {
+      "query": "pending"
+    },
+    "response": {
+      "success": true,
+      "data": [
+        {
+          "Task": "Buy groceries",
+          "Status": "Pending",
+          "Due Date": "2025-10-05"
+        },
+        {
+          "Task": "Call client",
+          "Status": "Pending",
+          "Due Date": "2025-10-06"
+        },
+        {
+          "Task": "Schedule meeting",
+          "Status": "Pending",
+          "Due Date": "2025-10-07"
+        },
+        {
+          "Task": "Plan weekend trip",
+          "Status": "Pending",
+          "Due Date": "2025-10-10"
+        },
+        {
+          "Task": "Clean workspace",
+          "Status": "Pending",
+          "Due Date": "2025-10-05"
+        }
+      ],
+      "count": 5,
+      "query": "pending"
+    }
+  },
+  {
+    "timestamp": "2025-10-04T12:07:21.913003",
+    "endpoint": "/tasks",
+    "request": {
+      "query": "pending"
+    },
+    "response": {
+      "success": true,
+      "data": [
+        {
+          "id": 1,
+          "title": "Complete project documentation",
+          "description": "Write comprehensive documentation for the new API endpoints",
+          "status": "pending",
+          "priority": "high",
+          "assigned_to": "John Doe",
+          "created_date": "2024-01-15",
+          "due_date": "2024-01-20"
+        },
+        {
+          "id": 3,
+          "title": "Update database schema",
+          "description": "Add new user fields to the database",
+          "status": "pending",
+          "priority": "low",
+          "assigned_to": "Bob Wilson",
+          "created_date": "2024-01-16",
+          "due_date": "2024-01-25"
+        },
+        {
+          "id": 5,
+          "title": "Deploy to production",
+          "description": "Deploy version 2.1.0 to production servers",
+          "status": "pending",
+          "priority": "medium",
+          "assigned_to": "Charlie Davis",
+          "created_date": "2024-01-17",
+          "due_date": "2024-01-22"
+        },
+        {
+          "id": 7,
+          "title": "Optimize database queries",
+          "description": "Optimize slow queries identified in performance testing",
+          "status": "pending",
+          "priority": "high",
+          "assigned_to": "Emma Taylor",
+          "created_date": "2024-01-18",
+          "due_date": "2024-01-24"
+        }
+      ],
+      "count": 4,
+      "query": "pending"
+    }
+  },
+  {
+    "timestamp": "2025-10-04T12:07:37.483586",
+    "endpoint": "/tasks",
+    "request": {
+      "query": "pending"
+    },
+    "response": {
+      "success": true,
+      "data": [
+        {
+          "id": 1,
+          "title": "Complete project documentation",
+          "description": "Write comprehensive documentation for the new API endpoints",
+          "status": "pending",
+          "priority": "high",
+          "assigned_to": "John Doe",
+          "created_date": "2024-01-15",
+          "due_date": "2024-01-20"
+        },
+        {
+          "id": 3,
+          "title": "Update database schema",
+          "description": "Add new user fields to the database",
+          "status": "pending",
+          "priority": "low",
+          "assigned_to": "Bob Wilson",
+          "created_date": "2024-01-16",
+          "due_date": "2024-01-25"
+        },
+        {
+          "id": 5,
+          "title": "Deploy to production",
+          "description": "Deploy version 2.1.0 to production servers",
+          "status": "pending",
+          "priority": "medium",
+          "assigned_to": "Charlie Davis",
+          "created_date": "2024-01-17",
+          "due_date": "2024-01-22"
+        },
+        {
+          "id": 7,
+          "title": "Optimize database queries",
+          "description": "Optimize slow queries identified in performance testing",
+          "status": "pending",
+          "priority": "high",
+          "assigned_to": "Emma Taylor",
+          "created_date": "2024-01-18",
+          "due_date": "2024-01-24"
+        }
+      ],
+      "count": 4,
+      "query": "pending"
+    }
+  },
+  {
+    "timestamp": "2025-10-04T12:08:22.635068",
+    "endpoint": "/gemini",
+    "request": {
+      "prompt": "Hello, how are you?",
+      "model": "gemini-pro"
+    },
+    "response": {
+      "success": false,
+      "response": "",
+      "error": "Usage: gemini [options] [command]\n\nGemini CLI - Launch an interactive CLI, use -p/--prompt for non-interactive mode\n\nCommands:\n  gemini [promptWords...]      Launch Gemini CLI  [default]\n  gemini mcp                   Manage MCP servers\n  gemini extensions <command>  Manage Gemini CLI extensions.\n\nOptions:\n      --telemetry                 Enable telemetry? This flag specifically controls if telemetry is sent. Other --telemetry-* flags set specific values but do not enable telemetry on their own.  [deprecated: Use the \"telemetry.enabled\" setting in settings.json instead. This flag will be removed in a future version.] [boolean]\n      --telemetry-target          Set the telemetry target (local or gcp). Overrides settings files.  [deprecated: Use the \"telemetry.target\" setting in settings.json instead. This flag will be removed in a future version.] [string] [choices: \"local\", \"gcp\"]\n      --telemetry-otlp-endpoint   Set the OTLP endpoint for telemetry. Overrides environment variables and settings files.  [deprecated: Use the \"telemetry.otlpEndpoint\" setting in settings.json instead. This flag will be removed in a future version.] [string]\n      --telemetry-otlp-protocol   Set the OTLP protocol for telemetry (grpc or http). Overrides settings files.  [deprecated: Use the \"telemetry.otlpProtocol\" setting in settings.json instead. This flag will be removed in a future version.] [string] [choices: \"grpc\", \"http\"]\n      --telemetry-log-prompts     Enable or disable logging of user prompts for telemetry. Overrides settings files.  [deprecated: Use the \"telemetry.logPrompts\" setting in settings.json instead. This flag will be removed in a future version.] [boolean]\n      --telemetry-outfile         Redirect all telemetry output to the specified file.  [deprecated: Use the \"telemetry.outfile\" setting in settings.json instead. This flag will be removed in a future version.] [string]\n  -d, --debug                     Run in debug mode?  [boolean] [default: false]\n      --proxy                     Proxy for gemini client, like schema://user:password@host:port  [deprecated: Use the \"proxy\" setting in settings.json instead. This flag will be removed in a future version.] [string]\n  -m, --model                     Model  [string]\n  -p, --prompt                    Prompt. Appended to input on stdin (if any).  [deprecated: Use the positional prompt instead. This flag will be removed in a future version.] [string]\n  -i, --prompt-interactive        Execute the provided prompt and continue in interactive mode  [string]\n  -s, --sandbox                   Run in sandbox?  [boolean]\n      --sandbox-image             Sandbox image URI.  [deprecated: Use the \"tools.sandbox\" setting in settings.json instead. This flag will be removed in a future version.] [string]\n  -a, --all-files                 Include ALL files in context?  [deprecated: Use @ includes in the application instead. This flag will be removed in a future version.] [boolean] [default: false]\n      --show-memory-usage         Show memory usage in status bar  [deprecated: Use the \"ui.showMemoryUsage\" setting in settings.json instead. This flag will be removed in a future version.] [boolean] [default: false]\n  -y, --yolo                      Automatically accept all actions (aka YOLO mode, see https://www.youtube.com/watch?v=xvFZjo5PgG0 for more details)?  [boolean] [default: false]\n      --approval-mode             Set the approval mode: default (prompt for approval), auto_edit (auto-approve edit tools), yolo (auto-approve all tools)  [string] [choices: \"default\", \"auto_edit\", \"yolo\"]\n  -c, --checkpointing             Enables checkpointing of file edits  [deprecated: Use the \"general.checkpointing.enabled\" setting in settings.json instead. This flag will be removed in a future version.] [boolean] [default: false]\n      --experimental-acp          Starts the agent in ACP mode  [boolean]\n      --allowed-mcp-server-names  Allowed MCP server names  [array]\n      --allowed-tools             Tools that are allowed to run without confirmation  [array]\n  -e, --extensions                A list of extensions to use. If not provided, all extensions are used.  [array]\n  -l, --list-extensions           List all available extensions and exit.  [boolean]\n      --include-directories       Additional directories to include in the workspace (comma-separated or multiple --include-directories)  [array]\n      --screen-reader             Enable screen reader mode for accessibility.  [boolean]\n  -o, --output-format             The format of the CLI output.  [string] [choices: \"text\", \"json\"]\n  -v, --version                   Show version number  [boolean]\n  -h, --help                      Show help  [boolean]\n\nCannot use both a positional prompt and the --prompt (-p) flag together"
+    }
+  },
+  {
+    "timestamp": "2025-10-04T12:11:17.254251",
+    "endpoint": "/tasks",
+    "request": {
+      "query": "pending"
+    },
+    "response": {
+      "success": true,
+      "data": [
+        {
+          "id": 1,
+          "title": "Complete project documentation",
+          "description": "Write comprehensive documentation for the new API endpoints",
+          "status": "pending",
+          "priority": "high",
+          "assigned_to": "John Doe",
+          "created_date": "2024-01-15",
+          "due_date": "2024-01-20"
+        },
+        {
+          "id": 3,
+          "title": "Update database schema",
+          "description": "Add new user fields to the database",
+          "status": "pending",
+          "priority": "low",
+          "assigned_to": "Bob Wilson",
+          "created_date": "2024-01-16",
+          "due_date": "2024-01-25"
+        },
+        {
+          "id": 5,
+          "title": "Deploy to production",
+          "description": "Deploy version 2.1.0 to production servers",
+          "status": "pending",
+          "priority": "medium",
+          "assigned_to": "Charlie Davis",
+          "created_date": "2024-01-17",
+          "due_date": "2024-01-22"
+        },
+        {
+          "id": 7,
+          "title": "Optimize database queries",
+          "description": "Optimize slow queries identified in performance testing",
+          "status": "pending",
+          "priority": "high",
+          "assigned_to": "Emma Taylor",
+          "created_date": "2024-01-18",
+          "due_date": "2024-01-24"
+        }
+      ],
+      "count": 4,
+      "query": "pending"
+    }
+  },
+  {
+    "timestamp": "2025-10-04T12:11:22.430554",
+    "endpoint": "/tasks",
+    "request": {
+      "query": "pending"
+    },
+    "response": {
+      "success": true,
+      "data": [
+        {
+          "id": 1,
+          "title": "Complete project documentation",
+          "description": "Write comprehensive documentation for the new API endpoints",
+          "status": "pending",
+          "priority": "high",
+          "assigned_to": "John Doe",
+          "created_date": "2024-01-15",
+          "due_date": "2024-01-20"
+        },
+        {
+          "id": 3,
+          "title": "Update database schema",
+          "description": "Add new user fields to the database",
+          "status": "pending",
+          "priority": "low",
+          "assigned_to": "Bob Wilson",
+          "created_date": "2024-01-16",
+          "due_date": "2024-01-25"
+        },
+        {
+          "id": 5,
+          "title": "Deploy to production",
+          "description": "Deploy version 2.1.0 to production servers",
+          "status": "pending",
+          "priority": "medium",
+          "assigned_to": "Charlie Davis",
+          "created_date": "2024-01-17",
+          "due_date": "2024-01-22"
+        },
+        {
+          "id": 7,
+          "title": "Optimize database queries",
+          "description": "Optimize slow queries identified in performance testing",
+          "status": "pending",
+          "priority": "high",
+          "assigned_to": "Emma Taylor",
+          "created_date": "2024-01-18",
+          "due_date": "2024-01-24"
+        }
+      ],
+      "count": 4,
+      "query": "pending"
+    }
+  },
+  {
+    "timestamp": "2025-10-04T12:11:28.040041",
+    "endpoint": "/tasks",
+    "request": {
+      "query": "pending"
+    },
+    "response": {
+      "success": true,
+      "data": [
+        {
+          "id": 1,
+          "title": "Complete project documentation",
+          "description": "Write comprehensive documentation for the new API endpoints",
+          "status": "pending",
+          "priority": "high",
+          "assigned_to": "John Doe",
+          "created_date": "2024-01-15",
+          "due_date": "2024-01-20"
+        },
+        {
+          "id": 3,
+          "title": "Update database schema",
+          "description": "Add new user fields to the database",
+          "status": "pending",
+          "priority": "low",
+          "assigned_to": "Bob Wilson",
+          "created_date": "2024-01-16",
+          "due_date": "2024-01-25"
+        },
+        {
+          "id": 5,
+          "title": "Deploy to production",
+          "description": "Deploy version 2.1.0 to production servers",
+          "status": "pending",
+          "priority": "medium",
+          "assigned_to": "Charlie Davis",
+          "created_date": "2024-01-17",
+          "due_date": "2024-01-22"
+        },
+        {
+          "id": 7,
+          "title": "Optimize database queries",
+          "description": "Optimize slow queries identified in performance testing",
+          "status": "pending",
+          "priority": "high",
+          "assigned_to": "Emma Taylor",
+          "created_date": "2024-01-18",
+          "due_date": "2024-01-24"
+        }
+      ],
+      "count": 4,
+      "query": "pending"
+    }
+  }
+]

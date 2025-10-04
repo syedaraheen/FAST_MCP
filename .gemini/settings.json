@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "tasks-server": {
+      "command": "python /home/raheen/FAST_MCP/server.py",
+      "args": []
+    }
+  }
+}
