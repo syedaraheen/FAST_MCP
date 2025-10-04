@@ -1,5 +1,17 @@
 # FAST MCP Server with Google Gemini Integration
 
+## 🎥 Demo Video
+
+Watch the FastMCP Task demonstration video:
+
+**[📹 Download and Watch: FastMCP_Task.mp4](FastMCP_Task.mp4)**
+
+*Complete demonstration of the MCP server functionality*
+
+> **💡 Tip**: Click the link above to download and view the video. For the best viewing experience, download the file and open it with your preferred video player.
+
+---
+
 A comprehensive Model Context Protocol (MCP) server demonstration featuring FastAPI, Excel-based To-Do list management, and Google Gemini CLI integration.
 
 ## 🚀 Features
@@ -348,11 +360,6 @@ Interactive API documentation is available at:
 ## 📄 License
 
 This project is open source and available under the MIT License.
-
-## 🎥 Demo Video
-
-Watch the FastMCP Task demonstration video:
-- **[FastMCP_Task.webm](FastMCP_Task.webm)** - Complete demonstration of the MCP server functionality
 
 ## 🎯 Demo Script
 
