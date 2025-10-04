@@ -4,11 +4,16 @@
 
 Watch the FastMCP Task demonstration video:
 
-**[📹 Download and Watch: FastMCP_Task.mp4](FastMCP_Task.mp4)**
+**[🎬 Watch Demo Video on Google Drive](https://drive.google.com/file/d/1-nIAcChPIO60_IdeFFIwLr6vL5bVRCZg/view?usp=sharing)**
 
 *Complete demonstration of the MCP server functionality*
 
-> **💡 Tip**: Click the link above to download and view the video. For the best viewing experience, download the file and open it with your preferred video player.
+> **📋 Instructions**: 
+> 1. Click the link above to watch the video on Google Drive
+> 2. You can view it directly in your browser or download it
+> 3. No file size limitations - smooth viewing experience
+> 
+> **💡 Benefits**: Google Drive provides better video streaming and playback controls compared to GitHub's file viewer.
 
 ---
 
